@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>hello coursera </title>
-  </head>
-  <body>
-    <h1>hello  </h1>
-  </body>
+<html>
+<style>
+body {
+  background-color: lightblue;
+  background-image: url("desktop/photo.jpeg");
+  }
+h1
+{
+  color: black;
+  text-shadow: 2px 2px blue;
+  word-spacing: 5px;
+  }
+
+h2 {
+  color: pink;
+  text-shadow: 2px 2px blue;
+  word-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+ color: black;
+  text-shadow: 2px 2px pink;
+  word-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+ }
+</style>
+
+<body>
+
+<h1>Hey lovely !</h1>
+<h2>Happy Womens Day</h2>
+
+<p>Do You love me babe?</p>
+
+<button onclick="myFunction()">If Yes then click ♥</button>
+
+<p class="demo1"></p>
+<p id="demo2"></p>
+<script>
+var fruits = [""];
+//document.getElementById("demo1").innerHTML = "" + fruits;
+function myFunction() {
+//  fruits.shift();
+  fruits.unshift("I love you too soo much!");
+  document.getElementById("demo2").innerHTML = "" + fruits;
+}
+
+</script>
+
+</body>
 </html>
