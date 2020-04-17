@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
-<style>
-</style>
-
+<html ng-app="myModule">
+<head>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <title>my first angular JS App</title>
+</head>
 <body>
-
-<h1>Hey lovely !</h1>
-<h2>Happy Womens Day</h2>
-
-<p>Do You love me babe?</p>
-</script>
-
-</body>
+  <h1>My First Page</h1>
+  <div ng-controller="myFirstController">
+    {{sayHello()}}
+    <div>
+      First Name : {{employee.firstName}}
+    </div>
+    <div>
+      Last Name : {{employee.lastName}}
+    </div>
+    <div>
+      Gender : {{employee.gender}}
+    </div>
+  </div>
+  <div ng-controller="myFirstController">
+    <input type="text" ng-model="name">
+    Inside my input is: {{name}}
+  </div>
 </html>
