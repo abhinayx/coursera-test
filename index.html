@@ -1,35 +1,25 @@
-<!DOCTYPE html>
-<html ng-app="myModule">
-<head>
-  <meta charset="utf-8">
-  <script src="angular.min.js"></script>
-  <script src="app.js"></script>
-  <title>my first angular JS App</title>
-</head>
-      <style>
-      h1 {
-  color: green;
-  font-family: verdana;
-  font-size: 200%;
-  text-shadow: 2px 2px;
-}
-      </style>
-<body>
-  <h1>My First Page</h1>
-  <div ng-controller="myFirstController">
-    {{sayHello()}}
-    <div>
-      First Name : {{employee.firstName}}
-    </div>
-    <div>
-      Last Name : {{employee.lastName}}
-    </div>
-    <div>
-      Gender : {{employee.gender}}
-    </div>
-  </div>
-  <div ng-controller="myFirstController">
-    <input type="text" ng-model="name">
-    Inside my input is: {{name}}
-  </div>
-</html>
+
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body onload="loadfood()">
+    <button onclick="myfunction()"> Add your fav food!
+    </button>
+      <p id="food">
+      </p>
+      <script>
+      var food =["banana","apple","mango","watermelon"];
+      function loadfood() {
+        document.getElementById("food").innerHTML = food;
+      }
+      function myfunction() {
+        var food = prompt("what is your fav food?");
+        food[food.length] = food;
+        document.getElementById('food').innerHTML = food;
+      }
+    </script>
+    <p id= "food"></p>
+    </body>

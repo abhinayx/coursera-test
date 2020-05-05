@@ -1,18 +1,12 @@
-(function (){
+<script>
+var food =["banana","apple","mango","watermelon"];
 
-angular.module('myModule', [])
-
-.controller('myFirstController', function ($scope) {
-
-  var employee ={
-    firstName : "Abhinay",
-    lastName : "Singh",
-    gender: "Male"
-  };
-  $scope.employee=employee;
-  $scope.sayHello= function () {
-    return "Hello coursera";
-  };
-});
-
-})();
+function loadfood() {
+  document.getElementById("food").innerHTML = food;
+}
+function myfunction() {
+  var food = prompt("what is your fav food?");
+  food[food.length] = food;
+  document.getElementById('food').innerHTML = food;
+}
+</script>
